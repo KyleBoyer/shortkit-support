@@ -1,0 +1,45 @@
+name: Report a problem
+description: Something in ShortKit isn't working right.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! **Issues are public. Please don't include personal details.**
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and OS version
+      placeholder: iPhone 16, iOS 27.2
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Settings → About → Version
+      placeholder: 1.1.0
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Bills / income / budgeting
+        - Sync between devices
+        - Backup / restore
+        - App lock (PIN / Face ID)
+        - Reminders / notifications
+        - Computer access
+        - Other
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots help. Blur anything personal.

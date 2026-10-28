@@ -1,0 +1,19 @@
+name: Ask a question or suggest a feature
+description: Questions, ideas, and feedback about ShortKit.
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Issues are public. Please don't include personal details.**
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question or idea
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device (optional)
+      placeholder: iPhone 16, iOS 27.2
